@@ -7,11 +7,14 @@
 </head>
 <body>
     <div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
-        <img src="/agab.png" alt="Logo 1" style="height: 60px;">
-        <h1 style="margin: 0; text-align: center;">Ecoferia2025</h1>
-        <img src="/guias.png" alt="Logo 2" style="height: 60px;">
+        <img src="/agab.png" alt="Logo 1" style="height: 65px;">
+        <h1 style="margin: 0; text-align: center;">Ecoferia 2025</h1>
+        <img src="/guias.png" alt="Logo 2" style="height: 65px;">
     </div>
-    <p>Gestor de actividades y control de participantes de la Ecoferia</p>
+    <p style="font-size: 20px;">Gestor de actividades y control de participantes de la Ecoferia</p>
+    <br>
+    <hr>
+    <br>
     <div class="menu">
         <button onclick="openSection('comisiones')">Comisiones</button>
         <button onclick="openSection('patrocinadores')">Patrocinadores</button>
@@ -21,7 +24,11 @@
         <button onclick="openSection('cronograma')">Cronograma</button>
     </div>
 
-    <div id="sectionContainer"></div>
+    <br><br>
+
+    <div id="sectionContainer">
+        <div class="background-image"></div>
+    </div>
 
     <!-- jsPDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>

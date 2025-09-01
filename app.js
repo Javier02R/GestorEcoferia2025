@@ -37,6 +37,13 @@ window.openSection = function (sectionName) {
       document.getElementById('sectionContainer').innerHTML = html;
       loadData(sectionName);
     });
+    
+};
+
+window.closeSection = function() {
+    const container = document.getElementById('sectionContainer');
+    container.innerHTML = '';
+    container.classList.remove('active'); // Vuelve la imagen de fondo
 };
 
 // ---- Cargar datos ----
