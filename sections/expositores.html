@@ -1,0 +1,22 @@
+<h2>Expositores</h2>
+<form onsubmit="addItem(event, 'expositores')">
+    <input type="text" placeholder="Expositor" required>
+    <input type="text" placeholder="Organizacion" required>
+    <input type="text" placeholder="Tema" required>
+    <input type="text" placeholder="Dia" required>
+    <button type="submit">Agregar</button>
+</form>
+
+<table id="table">
+    <thead>
+        <tr>
+            <th>Expositor</th>
+            <th>Organizacion</th>
+            <th>Tema</th>
+            <th>Dia</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<button onclick="exportPDF('expositores')">Exportar PDF</button>

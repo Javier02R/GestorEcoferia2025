@@ -1,0 +1,148 @@
+/* 🌱 Fondo y tipografía */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #eceeea, #9cd6c1);
+    color: #1b3e1b;
+}
+
+/* 🌟 Título principal */
+h1 {
+    font-size: 2.8em;
+    color: #2e7d32;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* 🍀 Menú principal */
+.menu {
+    margin-bottom: 35px;
+}
+
+.menu button {
+    margin: 12px;
+    padding: 18px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid #1b5e20;
+    background: linear-gradient(45deg, #43a047, #66bb6a);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.menu button:hover {
+    background: linear-gradient(45deg, #66bb6a, #81c784);
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* 📝 Formularios */
+form {
+    display: flex;
+    flex-wrap: wrap; /* Para que se adapte si la pantalla es muy pequeña */
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre inputs */
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffffcc;
+    border-radius: 15px;
+    width: 95%;
+    max-width: 1000px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+form input, form select {
+    flex: 1; /* Ocupa espacio disponible */
+    min-width: 150px; /* Tamaño mínimo para cada input */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #4caf50;
+    font-size: 16px;
+}
+
+form button {
+    padding: 12px 25px;
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: #1b5e20;
+    transform: scale(1.05);
+}
+
+/* 📊 Tablas */
+table {
+    width: 95%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+th {
+    background: linear-gradient(45deg, #388e3c, #66bb6a);
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #c8e6c9;
+    font-size: 15px;
+}
+
+tr:nth-child(even) {
+    background: #e8f5e9;
+}
+
+tr:hover {
+    background: #c8e6c9;
+}
+
+/* 🖱 Botones de tabla */
+td button {
+    background: #66bb6a;
+    color: #fff;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+td button:hover {
+    background: #388e3c;
+    transform: scale(1.05);
+}
+
+/* 📌 Botón exportar PDF */
+button[onclick*="exportPDF"] {
+    margin-top: 12px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ffb74d, #ffa726); /* amarillo-naranja */
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+button[onclick*="exportPDF"]:hover {
+    background: linear-gradient(45deg, #ffa726, #fb8c00);
+    transform: translateY(-2px) scale(1.05);
+}

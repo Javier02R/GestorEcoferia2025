@@ -1,0 +1,20 @@
+<h2>Stands</h2>
+<form onsubmit="addItem(event, 'stands')">
+    <input type="text" placeholder="Nombre" required>
+    <input type="text" placeholder="Actividad" required>
+    <input type="text" placeholder="Dia" required>
+    <button type="submit">Agregar</button>
+</form>
+
+<table id="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Actividad</th>
+            <th>Dia</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<button onclick="exportPDF('stands')">Exportar PDF</button>

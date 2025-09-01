@@ -1,0 +1,18 @@
+<h2>Comisiones</h2>
+<form onsubmit="addItem(event, 'comisiones')">
+    <input type="text" placeholder="Comision" required>
+    <input type="text" placeholder="Encargados" required>
+    <button type="submit">Agregar</button>
+</form>
+
+<table id="table">
+    <thead>
+        <tr>
+            <th>Comision</th>
+            <th>Encargados</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<button onclick="exportPDF('comisiones')">Exportar PDF</button>

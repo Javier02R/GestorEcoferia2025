@@ -1,0 +1,22 @@
+<h2>Patrocinadores</h2>
+<form onsubmit="addItem(event, 'patrocinadores')">
+    <input type="text" placeholder="Nombre" required>
+    <input type="text" placeholder="Empresa" required>
+    <input type="text" placeholder="Acciones" required>
+    <input type="text" placeholder="Contacto" required>
+    <button type="submit">Agregar</button>
+</form>
+
+<table id="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Empresa</th>
+            <th>Contacto</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<button onclick="exportPDF('patrocinadores')">Exportar PDF</button>

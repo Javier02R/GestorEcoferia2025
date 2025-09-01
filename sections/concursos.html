@@ -1,0 +1,48 @@
+<h2>Concursos</h2>
+<form onsubmit="addItem(event, 'concursos')">
+    <input type="text" placeholder="Nombre del participante" required>
+    <input type="number" placeholder="Edad" min="1" required>
+    <input type="text" placeholder="Lugar" required>
+    
+    <select required>
+        <option value="" disabled selected>Selecciona el concurso</option>
+        <option value="Vestido reciclable infantil">Vestido reciclable infantil</option>
+        <option value="Vestido reciclable juvenil">Vestido reciclable juvenil</option>
+        <option value="Vestido reciclable adulto">Vestido reciclable adulto</option>
+        <option value="Fotografía fauna">Fotografía - Fauna</option>
+        <option value="Fotografía flora">Fotografía - Flora</option>
+        <option value="Fotografía paisaje">Fotografía - Paisaje</option>
+    </select>
+
+    <button type="submit">Agregar</button>
+</form>
+
+<table id="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Lugar</th>
+            <th>Concurso</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<button onclick="exportPDF('concursos')">Exportar PDF</button>
+
+<script>
+function addItem(e, section) {
+    e.preventDefault();
+    const form = e.target;
+    const nombre = form.querySelector('input[placeholder="Nombre del participante"]').value;
+    const edad = form.querySelector('input[placeholder="Edad"]').value;
+    const lugar = form.querySelector('input[placeholder="Lugar"]').value;
+    const concurso = form.querySelector('select').value;
+
+    if (!nombre || !edad || !lugar || !concurso) return alert('Llena todos los campos');
+
+    saveData(section, { Nombre: nombre, Edad: edad, Lugar: lugar, Concurso: concurso });
+    form.reset();
+}
+</script>
