@@ -1,0 +1,18 @@
+<h2>Pendientes</h2>
+<form onsubmit="addItem(event, 'patrocinadores')">
+    <input type="text" placeholder="Fecha" required>
+    <input type="text" placeholder="Acciones" required>
+    <button type="submit">Agregar</button>
+</form>
+
+<table id="table">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<button onclick="exportPDF('patrocinadores')">Exportar PDF</button>
